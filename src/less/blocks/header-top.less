@@ -1,0 +1,35 @@
+.header-top {
+  min-width: 320px;
+}
+
+.header-top__wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  min-width: 260px;
+  min-height: 80px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
+  @media @tablet-widths {
+    align-items: flex-start;
+
+    width: 89%;
+    height: 88px;
+
+    padding: 0 5.5%;
+  }
+
+  @media @desktop-widths {
+    width: 93%;
+
+    padding: 0 3.5%;
+  }
+}

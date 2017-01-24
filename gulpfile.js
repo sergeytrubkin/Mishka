@@ -23,9 +23,9 @@ gulp.task("style", function() {
   gulp.src("src/less/style.less")
     .pipe(plumber())
     .pipe(less())
-    .pipe(postcss([                                                 // делаем постпроцессинг
-      autoprefixer({ browsers: ["last 2 version", "IE 11"] }),     // автопрефиксирование
-      mqpacker({ sort: true })                                     // объединение медиавыражений
+    .pipe(postcss([
+      autoprefixer({ browsers: ["last 2 version", "IE 11"] }),
+      mqpacker({ sort: true })
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())

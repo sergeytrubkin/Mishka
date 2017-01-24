@@ -1,0 +1,22 @@
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 81%;
+  margin: 0 auto;
+  @media @tablet-widths {
+    width: 94%;
+    margin: 0 auto;
+  }
+  @media @desktop-widths {
+    width: 1050px;
+    min-width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
+  };
+}

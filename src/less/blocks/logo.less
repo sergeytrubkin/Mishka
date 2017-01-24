@@ -1,0 +1,18 @@
+.logo {
+  margin: 0 auto;
+  font-size: 0;
+
+  @media @tablet-widths {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  @media @desktop-widths {
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
