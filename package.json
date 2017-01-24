@@ -1,10 +1,15 @@
 {
-  "name": "pink",
+  "name": "Mishka",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект «Мишка» от HTML Academy",
+  "author": "Сергей Трубкин",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serj555/Mishka.git"
+  },
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "^6.6.1",
     "browser-sync": "^2.18.5",
     "css-mqpacker": "^5.0.1",
@@ -23,7 +28,6 @@
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "editorconfig-cli",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
