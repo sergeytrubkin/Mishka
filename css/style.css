@@ -448,6 +448,12 @@ img {
   margin: 0 auto;
   font-size: 0;
 }
+.logo__link[href]:hover {
+  opacity: 0.6;
+}
+.logo__link[href]:active {
+  opacity: 0.3;
+}
 .main-nav {
   position: absolute;
   top: 81px;
@@ -568,10 +574,15 @@ img {
 .promo {
   position: relative;
   padding-top: 69px;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top -18px;
+}
+.promo--form {
+  padding: 0;
+  background-image: none;
+  background-color: #f1f1f1;
 }
 .promo__wrapper {
   display: -ms-flexbox;
@@ -587,6 +598,10 @@ img {
   margin-bottom: 121px;
   text-align: center;
   font-size: 27px;
+}
+.promo__title--form {
+  margin: 0;
+  margin: 70px auto 75px auto;
 }
 .promo__blocks {
   width: 100%;
@@ -651,9 +666,11 @@ img {
     left: 5%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
   }
   .main-nav {
-    position: static;
+    position: relative;
+    top: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -692,6 +709,9 @@ img {
   .main-nav__item--cart {
     padding-left: 83px;
   }
+  .main-nav__item--hidden {
+    display: none;
+  }
   .main-nav__item--delivery {
     position: absolute;
     right: 0;
@@ -705,9 +725,6 @@ img {
   }
   .main-nav__item--delivery .main-nav__link:hover {
     color: rgba(68, 68, 68, 0.6);
-  }
-  .main-nav__item--hidden {
-    display: none;
   }
   .main-nav__link--search {
     display: block;
@@ -736,6 +753,10 @@ img {
     background-size: 768px 25px;
     z-index: 1;
   }
+  .promo--form {
+    padding: 0;
+    background-image: none;
+  }
   .promo__wrapper {
     width: 89%;
     margin: 0 auto;
@@ -745,6 +766,9 @@ img {
     margin-bottom: 373px;
     font-size: 43px;
     line-height: 50px;
+  }
+  .promo__title--form {
+    margin: 93px auto;
   }
   .promo__blocks {
     display: -ms-flexbox;
@@ -782,6 +806,7 @@ img {
   .logo {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
   }
   .main-nav {
     position: static;
@@ -846,6 +871,9 @@ img {
     margin-bottom: 359px;
     font-size: 53px;
     line-height: 57px;
+  }
+  .promo__title--form {
+    margin: 95px auto 113px auto;
   }
   .promo__block-btn {
     padding: 25px 6% 44px 7%;
