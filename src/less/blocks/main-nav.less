@@ -13,7 +13,8 @@
   z-index: 1;
 
   @media @tablet-widths {
-    position: static;
+    position: relative;
+    top: 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +130,10 @@
     padding-left: 83px;
     }
 
+    &--hidden {
+      display: none;
+    }
+
     &--delivery {
       position: absolute;
       right: 0;
@@ -146,10 +151,6 @@
           color: fade(@text-color-lighter, 60%);
         }
       }
-    }
-
-    &--hidden {
-      display: none;
     }
   }
 
