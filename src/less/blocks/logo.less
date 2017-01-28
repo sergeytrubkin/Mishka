@@ -8,11 +8,26 @@
     top: 50%;
 
     transform: translateY(-50%);
+
+    z-index: 1;
   }
 
   @media @desktop-widths {
     left: 50%;
 
     transform: translateX(-50%) translateY(-50%);
+
+    z-index: 10;
+  }
+}
+
+.logo__link[href] {
+
+  &:hover {
+  opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
