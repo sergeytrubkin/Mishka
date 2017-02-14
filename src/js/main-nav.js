@@ -5,3 +5,5 @@ button.addEventListener("click", function(event) {
   event.preventDefault();
   menu.classList.toggle("main-nav--opened");
 })
+
+menu.classList.remove("main-nav--nojs");

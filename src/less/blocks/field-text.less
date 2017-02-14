@@ -1,0 +1,251 @@
+.field-text {
+  margin-bottom: 9px;
+
+  background-color: #fff;
+
+  @media @tablet-widths {
+
+    &--contacts {
+      padding: 68px 0 50px 0;
+      margin-bottom: 50px;
+
+      background-color: @form-bg-color;
+    }
+
+    &--textarea {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.field-text__wrapper {
+  background-color: inherit;
+
+  @media @tablet-widths {
+    width: 89%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+
+    padding: 0 50px;
+  }
+}
+
+.field-text__title {
+  margin-bottom: 27px;
+
+  position: relative;
+
+  color: @text-color-style;
+  font-weight: @font-weight-bold;
+
+  text-transform: uppercase;
+
+  background: inherit;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: @bg-color-style;
+  }
+
+  &--tel {
+    margin-bottom: 6px;
+  }
+
+  &--mail {
+    margin-bottom: 5px;
+  }
+
+  @media @tablet-widths {
+    width: 25%;
+
+    &::before {
+      display: none;
+    }
+
+    &--textarea {
+      padding-top: 15px;
+    }
+  }
+
+  @media @desktop-widths {
+    width: 175px;
+
+    padding-left: 60px;
+
+    box-sizing: border-box;
+  }
+}
+
+.field-text__title-text {
+  position: relative;
+
+  padding-right: 25px;
+
+  background-color: inherit;
+
+  z-index: 1;
+}
+
+.field-text__title-textarea {
+  margin-bottom: 24px;
+}
+
+.field-text__inner-wrap {
+
+  @media @tablet-widths {
+    width: 75%;
+  }
+}
+
+.field-text__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  &--tel {
+    margin-bottom: 9px;
+  }
+
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-bottom: 38px;
+
+    &--tel, &--mail {
+      width: 75%;
+    }
+
+    &--mail {
+      margin-bottom: 0;
+    }
+  }
+
+  @media @desktop-widths {
+    width: 700px;
+
+    margin-right: 100px;
+  }
+}
+
+.field-text__input {
+  width: 100%;
+
+  padding: 15px 0 15px 0;
+  margin-bottom: 22px;
+
+  background-color: inherit;
+
+  border: 0;
+  border-bottom: 2px solid #000;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  &:hover, &:active, &:focus {
+    border-color: @form-border-color-hover;
+
+    & + .field-text__input-icon {
+      fill: @form-icon-color-hover;
+    }
+  }
+
+  &--tel, &--mail {
+    padding-right: 45px;
+  }
+
+  @media @tablet-widths {
+    margin-bottom: 0;
+    padding: 0 50px 15px 15px;
+
+    font-size: @font-size-bigger - 1px;
+
+    &--tel, &--mail {
+      padding-right: 55px;
+    }
+  }
+
+  @media @desktop-widths {
+    padding-right: 70px;
+  }
+}
+
+.field-text__input-icon {
+  position: absolute;
+  right: 10px;
+  top: 13%;
+
+  fill: @form-icon-color;
+
+  @media @tablet-widths {
+    right: 25px;
+    top: -5px;
+  }
+
+  @media @desktop-widths {
+    top: -10px;
+
+    & svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.field-text__text {
+  font-weight: @font-weight-bold;
+
+  &::placeholder {
+    font-weight: @font-weight-normal;
+  }
+
+  @media @tablet-widths {
+    margin-right: 27px;
+
+    font-size: @font-size-bigger - 1px;
+  }
+}
+
+.field-text__textarea {
+  width: 100%;
+  min-height: 142px;
+
+  padding: 15px;
+  margin-bottom: 4px;
+
+  border: 2px solid @form-border-color;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  &:hover, &:active, &:focus {
+    border-color: @form-border-color-hover;
+  }
+
+  @media @tablet-widths {
+    width: 100%;
+  }
+
+  @media @desktop-widths {
+    width: 700px;
+  }
+}

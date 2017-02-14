@@ -1,0 +1,17 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  font-size: 0;
+}
+
+.social__link {
+
+  &:hover svg {
+    fill: @icon-color;
+  }
+
+  &:active svg {
+    fill: fade(@icon-color, 30%);
+  }
+}

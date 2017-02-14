@@ -1,0 +1,125 @@
+.form__button {
+
+  @media @tablet-widths {
+    margin-bottom: 50px;
+  }
+}
+
+.form__button-wrap {
+
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 89%;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    width: 700px;
+
+    margin: 0 auto;
+  }
+}
+
+.form__endnote {
+  margin-bottom: 30px;
+
+  font-size: @font-size-mini + 1px;
+
+  @media @tablet-widths {
+    margin-bottom: 0;
+
+    font-size: @font-size-normal;
+  }
+}
+
+.form__btn {
+  width: 100%;
+
+  margin-bottom: 55px;
+
+  text-transform: uppercase;
+
+  color: @form-btn-text-color;
+  font-weight: @font-weight-bold;
+  border: 2px solid @form-border-color;
+
+  &:hover {
+    color: @form-btn-bg-color;
+
+    background-color: @form-btn-text-color;
+  }
+
+  &:active {
+    color: fade(@form-btn-bg-color, 30%);
+
+    background-color: @form-btn-text-color;
+  }
+
+  @media @tablet-widths {
+    width: 230px;
+
+    margin-bottom: 0;
+  }
+}
+
+// Стили popup
+
+.form__popup {
+  width: 260px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 355px;
+  }
+}
+
+.form__button--popup {
+
+    @media @tablet-widths {
+      margin-bottom: 0;
+    }
+}
+
+.form__button-wrap--popup {
+
+  @media @tablet-widths {
+    display: block;
+
+    width: 100%;
+  }
+
+  @media @desktop-widths {
+    width: 100%;
+  }
+}
+
+.form__btn--popup {
+  margin-bottom: 0;
+
+  color: #fff;
+
+  border-color: @border-color-style;
+  background-color: @bg-color-style;
+
+  &:hover {
+    color: fade(#fff, 60%);
+
+    border-color: @border-color-style;
+    background-color: @bg-color-style;
+  }
+
+  &:active {
+    color: fade(#fff, 30%);
+
+    border-color: @border-color-style;
+    background-color: @bg-color-style;
+  }
+
+  @media @tablet-widths {
+    width: 100%;
+  }
+}
