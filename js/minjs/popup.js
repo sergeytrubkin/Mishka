@@ -1,0 +1,1 @@
+var item=document.querySelectorAll(".catalog-item"),popup=document.querySelector(".popup"),bg=document.querySelector(".popup__bg");[].forEach.call(item,function(e){e.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("popup--visible")})}),bg.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("popup--visible")});
